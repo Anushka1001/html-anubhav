@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=1440, user-scalable=no" /> -->
+  <title>Yoracraft</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  body {
+    scroll-behavior: smooth;
+  }
+
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    /* Adjust as per your design */
+    z-index: 9999;
+    /* To ensure the navbar stays above other content */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  }
+
+  section {
+    scroll-margin-top: 50px;
+  }
+</style>
+
+<body>
+  <div id="loader">
+    <img src="assets/gifs/animated_loader_gif_n6b5x0.gif" alt="Loading..." />
+  </div>
+
+  <div id="content" style="display: none">
+    <section id="top-section" class="top-section">
+      <img src="assets/logos/logo_big.png" alt="yoracraft-logo" id="yoracraft-main-logo" />
+      <div class="main-div">
+        <div>
+          <p style="color: #ffffff" class="banner-text-1">Global Aviation</p>
+          <p class="banner-text-1">spare part support</p>
+        </div>
+        <div>
+          <p class="banner-text-2">
+            Our Partnerships are rooted in reliability, <br />flexibility, and
+            customer care from the heart.
+          </p>
+        </div>
+      </div>
+    </section>
+    <header id="header-div"></header>
+
+    <div style="width: 100vw; height: 62.38px; display: none" id="tkdk"></div>
+    <!-- <header id="" class="new_header" style="display: flex">
+        <img
+          src="assets/logos/logo_big.png"
+          alt="yoracraft-logo"
+          style="height: 36px; margin-right: 2rem; cursor: pointer"
+        />
+        <ul
+          style="
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: static;
+            max-height: none;
+            overflow: visible;
+            gap: 32px;
+            color: white;
+          "
+        >
+          <li style="margin: 10px 0px">
+            <a href="#about-us" style="text-decoration: none; font-weight: bold"
+              >About us</a
+            >
+          </li>
+          <li style="margin: 10px 0px">
+            <a
+              href="#services-&amp;-parts"
+              style="text-decoration: none; font-weight: bold"
+              >Services &amp; Parts</a
+            >
+          </li>
+          <li style="margin: 10px 0px">
+            <a href="#quality" style="text-decoration: none; font-weight: bold"
+              >Quality</a
+            >
+          </li>
+          <li style="margin: 10px 0px">
+            <a
+              href="#collaboration"
+              style="text-decoration: none; font-weight: bold"
+              >Collaboration</a
+            >
+          </li>
+          <li style="margin: 10px 0px">
+            <a
+              href="#contact-us"
+              style="text-decoration: none; font-weight: bold"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </header> -->
+
+    <section id="about-us" class="about-section">
+      <div>
+        <h1>About Us</h1>
+      </div>
+      <div>
+        <p>
+          <strong>Yoracraft</strong> was founded in 2010 and specializes in selling new and
+          after-market spare parts for fixed-wing and Rotorcraft Aircraft.
+          <br />The company is headquartered in <span style="color: #0054e6;">Austria</span>, located in the heart of
+          Europe.
+        </p>
+      </div>
+      <div id="image-gallery" class="image-gallery-container"></div>
+      <div>
+        <p class="p-quotes">
+          &OpenCurlyDoubleQuote; Our vetted aftermarket spares are delivered fast,<br />so you can get
+          them when it matters most. &CloseCurlyDoubleQuote;
+        </p>
+      </div>
+    </section>
+    <section id="services-&-parts">
+      <div class="section-heading">
+        <h1>Nose-to-Tail Service</h1>
+      </div>
+      <div style="height: 50vh" class="services-section">
+        <div>
+          <div>
+            <p class="your-craft">
+              Yoracraft is an international<br />
+              provider in the aviation<br />
+              spare parts and<br />
+              component marketplace.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>
+              We provide new and used components for the commercial, regional,
+              and business aviation markets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="quality" class="quality-section">
+      <div class="container-fluid">
+        <div class="row mt-2 mb-5">
+          <div class="col-md-6">
+            <div>
+              <h1 slot="font-weight: 900 !important">Quality & Certification</h1>
+            </div>
+            <div>
+              <p>Quality is the heart of everything we perform</p>
+            </div>
+            <div>
+              <div class="my-2">
+                <div class="my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                    <path fill="#00b1e6"
+                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                  <span>ASA-100 certified </span>
+                </div>
+                <div class="my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                    <path fill="#00b1e6"
+                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                  <span>FAA Advisory Circular 00-56B </span>
+                </div>
+                <div class="my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+                    <path fill="#00b1e6"
+                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                  <span>Member of the Aviation Suppliers Association </span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button id="download-pdf-button">
+                Download Yoracraft Quality Certification
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+
+            <div>
+              <h1 style="color: #242422; font-weight: 600; text-transform: capitalize;" class="mb-2">Uncompromised
+                quality, every time.</h1>
+            </div>
+            <div>
+              <p style="font-weight: 400; text-align: justify;" class="mt-3 word-break px-4">
+                We have achieved accreditation to the highest quality standards
+                within the industry. Yoracraft is fully certified
+                to ASA-100 and FAA AC00-56B quality systems and is a member of the
+                Aviation Suppliers Association.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="collaboration">
+      <div class="section-heading">
+        <h1>Collaboration</h1>
+      </div>
+      <div style="height: 90vh" class="collaboration-section">
+        <div class="collaboration_inner">
+          <img src="assets/logos/vectorbirds_logo_black.png" alt="vectorbirds-logo.png" style="height: 6.5rem" />
+          <img src="assets/logos/logo_big.png" alt="yoracraft-logo.png" style="height: 3.5rem" />
+        </div>
+        <div>
+          <p style="max-width: 60%; font-size: 20px; ">
+            Yoracraft proudly announces a collaboration with Vectorbirds for
+            specific markets targeting its
+            flagship products, the Grabbit G7 and the Kite 75.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact-us">
+      <div class="section-heading">
+        <h1>Contact us</h1>
+      </div>
+      <div style="height: 80vh" class="contact-section">
+        <div style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              position: static;
+              padding-top: 5%;
+            ">
+          <p style="color: #ffffff">We keep the global</p>
+          <p>fleet flying</p>
+        </div>
+        <div>
+          <div style="border-radius: 0px" class="bottom_sec">
+            <div>
+              <img src="assets/logos/logo_big.png" alt="yoracraft-logo" />
+            </div>
+            <div style="text-align: left">
+              <span>Yoracraft GmbH </span>
+              <span>Weidegasse 8 </span>
+              <span>2443 Stotzing </span>
+              <span>Austria </span>
+            </div>
+            <div style="text-align: left">
+              <span>info@yoracraft.com </span>
+              <span>+43 650 5053 295 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="position: relative">
+      <div>
+        <span id="imprint">Imprint</span>
+        <span id="disclaimer">Disclaimer</span>
+        <span id="terms-conditions">Terms & Conditions</span>
+        <span id="shareLinkedIn" style="display: flex; height: 1.5rem; width: 1.5rem"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffffff">
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+          </svg>
+        </span>
+      </div>
+      <div>
+        <span id="copyright" style="cursor: auto; color: #ffffff">© 2024 Yoracraft</span>
+      </div>
+      <img src="assets/logos/icon_nachoben.png" id="scroll-to-top" class="scroll-to-top-button" />
+    </footer>
+    <div id="modal" style="
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.8);
+          justify-content: center;
+          align-items: center;
+        ">
+      <div class="modal-content">
+        <div id="closeModal" style="
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              width: 2.5%;
+              cursor: pointer;
+            ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#00b1e6">
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </div>
+        <div id="modalContent" style="height: 100%; width: 100%; border: none"></div>
+      </div>
+    </div>
+    <div id="cookie-banner" style="
+          display: flex;
+          justify-content: space-between;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: #333;
+          color: white;
+          padding: 1.5rem 5rem 1.5rem 5rem;
+          text-align: center;
+        ">
+      <div style="display: flex; align-self: center">
+        <p style="font-weight: 600">
+          We use cookies to improve your experience. By continuing to visit
+          this website, you agree to our use of cookies.
+        </p>
+      </div>
+      <div style="display: flex; gap: 0.5rem">
+        <button id="accept-cookies" style="
+              padding: 10px 20px;
+              border-radius: 25px;
+              background-color: #00b1e6;
+              color: white;
+              border: none;
+            ">
+          Accept
+        </button>
+        <button id="reject-cookies" style="
+              padding: 10px 20px;
+              border: 1px solid #00b1e6 !important;
+              border-radius: 25px;
+              color: #00b1e6 !important;
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+            ">
+          Reject
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.querySelector("header.new_header");
+      var topSection = document.getElementById("top-section");
+
+      // Check if we have scrolled past the top section
+      var topSectionHeight = topSection.offsetHeight;
+
+      if (window.scrollY > topSectionHeight) {
+        console.log("abhishek");
+
+        <!-- navbar.classList.add("fixed-navbar"); -->
+      } else {
+      }
+    });
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
